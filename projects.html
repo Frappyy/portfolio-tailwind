@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tailwind Portfolio Demo</title>
+</head>
+
+<body class="bg-black font-['Lato']">
+    <header class="absolute h-20 w-screen flex justify-around">
+        <div class="flex justify-center items-center h-full">
+            <a href="index.html" class="text-white hover:text-rose-600 trans02 text-shdw-light">
+                <p class="text-3xl">FREDY AIT</p>
+                <p class="text-xs">NOOREM TARKVARAARENDAJA</p>
+            </a>
+        </div>
+        <div class="flex gap-10">
+            <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="index.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">AVALEHT</a></div>
+            <div class="flex justify-center items-center w-44 border-b-4 border-rose-600"><a href="projects.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">PROJEKTID</a></div>
+            <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="moreinfo.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">LISAINFO</a></div>
+        </div>
+    </header>
+    <img src="Images/wallpaper.jpeg" alt="background.jpeg" class="relative h-screen w-screen object-cover blur-lg brightness-75 -z-10 saturate-50">
+</body>
+<style>
+    .trans02 {
+        transition: all .2s ease;
+    }
+    .trans05 {
+        transition: all .5s ease;
+    }
+
+    .text-shdw-light {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, .35);
+    }
+</style>
+</html>
