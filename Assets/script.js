@@ -2,14 +2,6 @@ const bMenu = document.getElementById("burger-menu");
 const bContent = document.querySelectorAll("#burger-content");
 const fadeEl = document.querySelectorAll(".fade-in");
 
-// CONTENT FADE IN
-window.onload = setTimeout(window.onload = fadeIn, 250);
-function fadeIn() {
-    fadeEl.forEach((i) => {
-        i.style.opacity = "1";
-    });
-}
-
 // BURGER MENU CONTENT SLIDE ANIMATION
 document.getElementById('burger-toggle').onclick = function() {
     if(this.checked){
@@ -24,3 +16,11 @@ document.getElementById('burger-toggle').onclick = function() {
         bContent[2].style.opacity = "0%";
     }
 };
+
+// CONTENT FADE IN
+window.onload = setTimeout(window.onload = fadeIn, 250);
+function fadeIn() {
+    fadeEl.forEach((i) => {
+        i.style.opacity = "1";
+    });
+}
