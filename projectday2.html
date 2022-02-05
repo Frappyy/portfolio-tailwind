@@ -9,60 +9,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1e98863f1b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Tailwind Portfolio Demo</title>
 </head>
 
-<body class="bg-zinc-900 font-['Lato']">
-    <header class=" h-20 w-screen flex justify-around">
-        <div class="flex justify-center items-center h-full">
-            <a href="index.html" class="text-white hover:text-rose-600 trans02 text-shdw-light">
-                <p class="text-3xl">FREDY AIT</p>
-                <p class="text-xs">NOOREM TARKVARAARENDAJA</p>
-            </a>
+<body class="bg-zinc-900 pb-12">
+    <div class="px-12 font-['Lato'] lg:px-24 xl:px-44 ">
+        <header class=" h-14 lg:h-20 flex justify-between">
+            <div class="flex justify-center items-center h-full">
+                <a href="index.html" class="text-white hover:text-rose-600 trans02 text-shdw-light">
+                    <p class="text-2xl lg:text-3xl">FREDY AIT</p>
+                    <p class="text-xs">NOOREM TARKVARAARENDAJA</p>
+                </a>
+            </div>
+            <div class="flex gap-10 hidden lg:flex">
+                <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="index.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">AVALEHT</a></div>
+                <div class="flex justify-center items-center w-44 border-b-4 border-rose-600"><a href="projects.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">PROJEKTID</a></div>
+                <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="moreinfo.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">LISAINFO</a></div>
+            </div>
+            <div class="lg:hidden flex justify-center items-center">
+                <input type="checkbox" id="burger-toggle" value="Hello!" class="w-10 h-10">
+                <div class="hamburger"><div></div></div>
+            </div>
+        </header>
+        <div id="burger-menu" class="trans05 h-0 bg-white overflow-hidden flex flex-col justify-around px-3 lg:hidden">
+            <div class="flex items-center w-44 text-2xl text-black trans05 text-shdw-light" id="burger-content"><a href="index.html">AVALEHT</a></div>
+            <div class="flex items-center w-44 text-2xl text-black trans05 text-shdw-light" id="burger-content"><a href="projects.html">PROJEKTID</a></div>
+            <div class="flex items-center w-44 text-2xl text-black trans05 text-shdw-light" id="burger-content"><a href="moreinfo.html">LISAINFO</a></div>
         </div>
-        <div class="flex gap-10">
-            <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="index.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">AVALEHT</a></div>
-            <div class="flex justify-center items-center w-44 border-b-4 border-rose-600"><a href="projects.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">PROJEKTID</a></div>
-            <div class="flex justify-center items-center w-44 border-b-4 border-transparent"><a href="moreinfo.html" class="text-3xl text-white hover:text-rose-600 trans02 text-shdw-light">LISAINFO</a></div>
+        <div class="h-full text-white text-shdw-light flex flex-col gap-5 mt-12 lg:mt-24">
+            <h1 class="text-2xl lg:text-3xl font-semibold">VIRTUAALNE INSTRUMENT</h1>
+            <p class="text-xl lg:text-2xl">Teise projektina pidime kokku panema arduino juppidest ning selle ära programmeerima,
+                et see ühenduks ära veebisaidiga kus sai mängida chello noote. Ühendamine toimus serveriga mis jooksis
+                teise arvuti peal. Noote sai mängida veebisaidi kui ka arduino peal. Veebisaidil oli ka juba enam-jaolt 
+                ette tehtud kood mis visualiseeris hääli JavaScriptiga. Mina peamiselt tegelesin JavaScriptiga, et need
+                noodid töötaksid ja Githubiga. Kahjuks ei tulnud asi välja nii hästi kui oleks võinud. Hääl hakkis ja
+                kõik jooksis üleüldse väga aeglaselt. Tiimiga oli ka probleeme, kuna meil ei olnud tegelikku liiderit, 
+                enamus lahkusid ja me üleüldse ei sobinud väga kokku.
+            </p>
+            <h1 class="text-2xl lg:text-3xl font-semibold">LINGID</h1>
+            <div class="flex gap-5 flex-col sm:flex-row">
+                <a href="https://github.com/Frappyy/tiim-5"><button class="bg-white shadow-md text-2xl text-black p-2 trans035 hover:scale-105 hover:text-white hover:bg-rose-600">GITHUB</button></a>
+                <a href="https://www.figma.com/file/MS84o0iRUgXWLZkr4FUfv8/Tiim5?node-id=0%3A1"><button class="bg-white shadow-md text-2xl text-black p-2 trans035 hover:scale-105 hover:text-white hover:bg-rose-600">FIGMA</button></a>
+            </div>
+            <h1 class="text-2xl lg:text-3xl font-semibold">DISAIN</h1>
+            <img src="Assets/Images/2-projektipaev-chello.png" alt="2-projektipaev-chello">
         </div>
-    </header>
-    <div class="h-full w-screen px-46 py-24 text-white text-shdw-light flex flex-col gap-5">
-        <h1 class="text-3xl font-semibold">VIRTUAALNE INSTRUMENT</h1>
-        <p class="text-2xl">Teise projektina pidime kokku panema arduino juppidest ning selle ära programmeerima,
-            et see ühenduks ära veebisaidiga kus sai mängida chello noote. Ühendamine toimus serveriga mis jooksis
-            teise arvuti peal. Noote sai mängida veebisaidi kui ka arduino peal. Veebisaidil oli ka juba enam-jaolt 
-            ette tehtud kood mis visualiseeris hääli JavaScriptiga. Mina peamiselt tegelesin JavaScriptiga, et need
-            noodid töötaksid ja Githubiga. Kahjuks ei tulnud asi välja nii hästi kui oleks võinud. Hääl hakkis ja
-            kõik jooksis üleüldse väga aeglaselt. Tiimiga oli ka probleeme, kuna meil ei olnud tegelikku liiderit, 
-            enamus lahkusid ja me üleüldse ei sobinud väga kokku.
-        </p>
-        <h1 class="text-3xl font-semibold">LINGID</h1>
-        <div class="flex gap-5">
-            <a href="https://github.com/Frappyy/tiim-5"><button class="bg-white shadow-md text-2xl text-black p-2 trans035 hover:scale-105 hover:text-white hover:bg-rose-600">GITHUB</button></a>
-            <a href="https://www.figma.com/file/MS84o0iRUgXWLZkr4FUfv8/Tiim5?node-id=0%3A1"><button class="bg-white shadow-md text-2xl text-black p-2 trans035 hover:scale-105 hover:text-white hover:bg-rose-600">FIGMA</button></a>
-        </div>
-        <h1 class="text-3xl font-semibold">DISAIN</h1>
-        <img src="Images/2-projektipaev-chello.png" alt="2-projektipaev-chello">
     </div>
-    <img src="Images/wallpaper.jpeg" alt="background.jpeg" class="fixed top-0 h-screen w-screen object-cover blur-lg brightness-90 -z-10 saturate-50">
+    <img src="Assets/Images/wallpaper.jpeg" alt="background.jpeg" class="p-0 fixed top-0 h-screen w-screen object-cover blur-lg brightness-90 -z-10 saturate-50">
+    <script src="Assets/script.js"></script>
 </body>
-<style>
-    .trans02 {
-        transition: all .2s ease;
-    }
-    .trans035 {
-        transition: all .35s ease;
-    }
-    .trans05 {
-        transition: all .5s ease;
-    }
- 
-    .text-shdw-light {
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, .35);
-    }
-    .px-46 {
-        padding-left: 11.6rem;
-        padding-right: 11.6rem;
-    }
-</style>
 </html>
