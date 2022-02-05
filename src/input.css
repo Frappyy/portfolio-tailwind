@@ -35,14 +35,14 @@
 
 #burger-toggle:checked + .hamburger > div {
     transform: rotate(135deg);
-    background-color: rgb(225 29 72);
+    background-color: white;
 }
 
 #burger-toggle:checked + .hamburger > div:before,
 #burger-toggle:checked + .hamburger > div:after {
     top: 0;
     transform: rotate(90deg);
-    background-color: rgb(225 29 72);
+    background-color: white;
 }
 
 #burger-toggle:checked ~ .hamburger-content {
