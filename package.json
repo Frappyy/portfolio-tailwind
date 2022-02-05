@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i ./src/styles.css -o ./public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frappyy/portfolio-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frappyy/portfolio-tailwind/issues"
+  },
+  "homepage": "https://github.com/Frappyy/portfolio-tailwind#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.18"
+  }
+}
