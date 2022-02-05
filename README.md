@@ -3,4 +3,5 @@ This my portfolio website where you can find out about who I am, what I do and l
 
 # Links
 Live: https://tak21fredyait.itmajakas.ee/fredy-ait-portfolio/index.html
+
 Old repo: https://github.com/Frappyy/fredy-ait-portfolio-old
