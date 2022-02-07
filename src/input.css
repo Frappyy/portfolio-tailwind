@@ -77,6 +77,12 @@
     top: 10px;
 }
 
+#image {
+    background-image: url("Images/wallpaper.jpeg");
+    height: 120%;
+    width: 120%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

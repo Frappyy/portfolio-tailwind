@@ -79,6 +79,12 @@
   top: 10px;
 }
 
+#image {
+  background-image: url("Images/wallpaper.jpeg");
+  height: 120%;
+  width: 120%;
+}
+
 /*
 ! tailwindcss v3.0.18 | MIT License | https://tailwindcss.com
 */
@@ -686,6 +692,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .object-cover {

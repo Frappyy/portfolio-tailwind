@@ -1,6 +1,7 @@
 const bMenu = document.getElementById("burger-menu");
 const bContent = document.querySelectorAll("#burger-content");
 const fadeEl = document.querySelectorAll(".fade-in");
+const bgImage = document.getElementById('image');
 
 // BURGER MENU CONTENT SLIDE ANIMATION
 document.getElementById('burger-toggle').onclick = function() {
@@ -24,3 +25,11 @@ function fadeIn() {
         i.style.opacity = "1";
     });
 }
+
+// MAKES THE BACKGROUND IMAGE MOVE BY MOUSE MOVEMENTS
+window.addEventListener('mousemove', (e) => {
+    let x = e.clientX - window.innerWidth;
+    let y = e.clientY - window.innerHeight;
+
+    bgImage.style.transform = 'translate(' + (x / 100) + 'px, ' + (y / 100) + 'px';
+});
