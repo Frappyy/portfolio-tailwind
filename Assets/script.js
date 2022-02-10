@@ -31,5 +31,5 @@ window.addEventListener('mousemove', (e) => {
     let x = e.clientX - window.innerWidth;
     let y = e.clientY - window.innerHeight;
 
-    bgImage.style.transform = 'translate(' + (x / 100) + 'px, ' + (y / 100) + 'px';
+    bgImage.style.transform = 'translate(' + (x / 80) + 'px, ' + (y / 80) + 'px';
 });
